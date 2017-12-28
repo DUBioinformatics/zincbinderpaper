@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="zincbinder" content="" />
+    <title>ZincBinder</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="logo"><img src="images/zinclogo.png" width="406" height="130" /></div>
+      <div id="slogan"><img src="images/logo.png" width="119" height="128"></div></div>
+      <div id="menu"><a href="index.html">Home</a><a href="prediction.html">Prediction</a><a href="algorithm.html">Algorithm</a><a href="team.html">Developers</a><a href="help.html">Help</a><a href="contact.html">Contact</a></div>
+      <div id="slider">
+      
+<table  width="714" height="516" border="0" align="center">  
+<tr>
+  <td colspan="2">For detailed methodology and further information, see the <a href="help.html">Help file</a>.</td></tr>
+<tr>
+  <td colspan="2"><font color="#EE0000">Usage: </font><font size="3">Paste your sequence in the textarea provided or upload the file containing the sequence in <a href="http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml" target="_blank"><font color="#0066FF"> Fasta format</font></a> into the sequence field below and press the <font color="#0066FF">Run Prediction </font> button.</td></tr>
+<tr>
+  <td colspan="2">Any other line numbers or whitespaces will be removed. <a href=tips4server.html onclick="window.open('tips.html','popup','width=560,height=230,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"> Tips</a></td></tr>
+<form ENCTYPE="multipart/form-data" action="/cgi-bin/znbinder/zn_pred1.pl" method="POST">
+<tr><td width="195" height="44" align="center" bgcolor="#99e5e5">
+Query title <font color="#DD0000">(optional)</font></td><td width="509" bgcolor="#99e5e5" ><input name="title" size="40" type="text"></td></tr>
+<tr><td height="39" align="center" bgcolor="#99e5e5" >Input sequence format</td><td bgcolor="#99e5e5"><select name="format" size="1"><option value="fasta">Fasta Format</select></td></tr>
+<tr><td bgcolor="#99e5e5" align="center">Query sequence</td><td bgcolor="#99e5e5"><textarea name="seq" rows="7" cols="70"></textarea></td></tr> 
+<tr><td height="51"  bgcolor="#99e5e5" align="center">OR <br>Upload Sequence file</br></td><td bgcolor="#99e5e5"><INPUT type="FILE" name="file"></td></tr>
+<tr><td height="33" align="center" bgcolor="#99e5e5">
+SVM Threshold :</td><td bgcolor="#99e5e5"><SELECT name="svm_fpr">
+  <OPTION value="-1"> -1.0
+	      <OPTION value="-.9"> -0.9</OPTION>
+	      <OPTION value="-.8"> -0.8</OPTION>
+	      <OPTION value="-.7"> -0.7</OPTION>
+	      <OPTION value="-.6"> -0.6</OPTION>
+	      <OPTION value="-.5"> -0.5</OPTION>
+	      <OPTION value="-.4"> -0.4</OPTION>
+	      <OPTION value="-.3"> -0.3</OPTION>
+	      <OPTION value="-.2"> -0.2</OPTION>
+	      <OPTION value="-.1"> -0.1</OPTION>
+	      <OPTION value="0.0">0.0</OPTION>
+	      <OPTION SELECTED value=".1"> 0.1</OPTION>
+	      <OPTION value=".2">0.2</OPTION>
+	      <OPTION value=".3">0.3</OPTION>
+	      <OPTION value=".4">0.4</OPTION>
+	      <OPTION value=".5">0.5</OPTION>
+	      <OPTION value=".6">0.6</OPTION>
+	      <OPTION value=".7">0.7</OPTION>
+	      <OPTION value=".8">0.8</OPTION>
+	      <OPTION value=".9">0.9</OPTION>
+	      <OPTION value="1.0"> 1.0</OPTION>
+      </SELECT></td></tr>
+
+<tr>
+  <td height="71" align="center" bgcolor="#99e5e5"> E-mail address for job completion alert <font color="#EE0000">(optional)</font>:</td>
+  <td bgcolor="#99e5e5"><input name="email"></td></tr>
+<tr><td colspan="2" bgcolor="#99e5e5" align="center"><p>
+  <input type="submit" value="Run Prediction">
+  &nbsp;<input type="reset" value="Clear">
+</p>
+    <p>&nbsp; </p></td></tr></form>
+</table></div>
+	      <div id="page-bottom"><div id="page-bottom-content"><p>ZincBinder is maintained by Department of Biophysics, University of Delhi South Campus. We acknowledge your comments or contribution to this resources. Please send your sugestions to Dr. Manish Kumar (Email:manish at south dot du dot ac dot in)</p></div>
+		<br class="clearfix"/>
+	      </div>
+	      </div>
+	      </body>
+	      </html>
+	      

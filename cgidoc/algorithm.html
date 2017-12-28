@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="zincbinder" content="" />
+<title>ZincBinder</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="logo"><img src="images/zinclogo.png" width="406" height="130" /></div>
+      <div id="slogan"><img src="images/logo.png" width="119" height="128"></div></div>
+      <div id="menu">
+	<p><a href="index.html">Home</a><a href="prediction.html">Prediction</a><a href="algorithm.html">Algorithm</a><a href="team.html">Developers</a><a href="help.html">Help</a><a href="contact.html">Contact</a></p></div><div id="slider"><table><tr><td align="center"><h4><font color="#EE0000">Complete workflow of whole prediction algorithm</font></h4></td></tr><tr><td align="center"><img src="images/algo.png" width="849" height="760" /></td></tr>
+  <tr><td><h4><font color="#EE0000">Support vector machine</font></h4></td></tr>
+  <tr><td align="justify"><p>The support vector machines (SVM) is a novel machine learning method which has been sucessfully applied to various classification and pattern recognition area .The SVM has been shown to perform better in cllasifying functional protein.The SVM always seeks global hyperplane to separate the both classes of examples in training set and avoid overfitting. The hyperplane found by SVM is one that maximise the separating margins between both binary classes.The SVM was implemented using freely downloadable software package <font color="#0066FF">SVM_light</font> written by Joachims (Joachims 1999) and can be downloadable from <a href="http://svmlight.joachims.org/" target="_blank"><font color="#0066FF">http://svmlight.joachims.org/</font></a>.The software enables the user to define a number of parameters as well as to select from a choice of inbuilt kernal functions, including a radial basis function (RBF) and a polynomial kernal.</p>
+      <tr><td><h4><font color="#EE0000">Performance measures</font></h4></td></tr>
+      <tr><td><h5><font color="#0066FF">Five-fold cross-validation</font></h5></td></tr>
+      <tr><td align="justify">The 5-fold cross validation technique examined the prediction quality.In this technique relevant dataset was randomly divided into distinct five subsets. The training and testing was carried out five times, each time using one subset for testing and the remaining four sets for training. The accuracy of results commonly measured by the quantity of True Positives (TP), True Negatives (TN), False Positives (FP) and False Negatives (FN). In the prediction system the total prediction accuracy, Mathew's correlation co-efficient (MCC), sensitivity and specificity was calculated by following equations.</td></tr>
+      
+      <tr><td height="32"><font color="#0066FF">Sensitivity </font>= (TP / (TP+FN))*100 </td></tr>
+      
+      <tr><td height="38"><font color="#0066FF">Specificity </font>= (TN / (TN+FP))*100</td></tr>
+       
+      <tr><td height="33"><font color="#0066FF">Accuracy </font>= (TP+TN / (TP+FP+TN+FN))*100</td></tr>
+      
+      <tr><td height="40"><font color="#0066FF">MCC</font> = (TP * TN) - (FP*FN) / Ö(TP+FN)* (TP+FP)*(TN+FP)*(TN+FN).</td></tr>
+      
+      <tr><td align="justify">Where <font color="#0066FF">TP</font> and <font color="#0066FF">TN</font> are correctly predicte zinc metal binding sites and non-zincmetal binding sites  respectively. <font color="#0066FF">FP</font> and <font color="#0066FF">FN </font>are wrongly predicted zinc metal binding sites and non-zincmetal binding sites respectively.</td></tr></table></div>
+  <div id="page-bottom"><div id="page-bottom-content"><p>ZincBinder is maintained by Department of Biophysics, University of Delhi South Campus. We acknowledge your comments or contribution to this resources. Please send your sugestions to Dr. Manish Kumar (Email:manish at south dot du dot ac dot in)</p></div>
+    <br class="clearfix"/>
+  </div>
+	</div>
+      </body>
+</html>

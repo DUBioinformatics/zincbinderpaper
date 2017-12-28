@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="zincbinder" content="" />
+<title>ZincBinder</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="logo"><img src="images/zinclogo.png" width="406" height="130" /></div>
+<div id="slogan"><img src="images/logo.png" width="119" height="128"></div></div>
+<div id="menu"><a href="index.html">Home</a><a href="prediction.html">Prediction</a><a href="algorithm.html">Algorithm</a><a href="team.html">Developers</a><a href="help.html">Help</a><a href="contact.html">Contact</a></div>
+<div id="slider"><table  border="0">
+<tr><td bgcolor="#F3E5AB" align="center"><font color="#3366FF" face="Georgia, Times New Roman, Times, serif" size="+2">Description</font></td><td  width="373" height="33"
+bgcolor="#F3E5AB" align="center"><font color="#3366FF" face="Georgia, Times New Roman, Times, serif" size="+2">Comparative results</font></td></tr>
+<tr>
+<td align="justify"><font color ="#990033" size="+2" face="Georgia, Times New Roman, Times, serif"><strong><i>ZincBinder</i></strong></font> is a software tool for the prediction of the zinc-binding state of  amino-acids from sequence information only, using predictors based on support vector machines. Our model predicts zinc metal binding sites using PSSM module with <font color="#660000">86.2% accuracy</font>. The method is trained and tested on the dataset of 738 proteins and evaluated using five fold cross validation technique. We have developed a user friendly webserver  where user can submit there sequence (directly paste sequence in box or upload sequence file) and select the option for svm threshold.</td><td rowspan="8" align="left"><img src="images/front_page.jpg" alt="" width="371" height="437" /></td></tr>
+<tr>
+  <td bgcolor="#F3E5AB" align="center"><font color="#3366FF" face="Georgia, Times New Roman, Times, serif" size="+2">How can I use ZincBinder Server???</font></td></tr>
+<tr><td>We also provide suplementary dataset and <a href="standalone.html"><strong>standalone version of ZincBinder software</strong></a> without any charge. User can download this standalone software and our <a href="supplementry.html"><strong>dataset</strong></a> on local system.</td></tr>
+<tr>
+  <td bgcolor="#F3E5AB" align="center"><font color="#3366FF" face="Georgia, Times New Roman, Times, serif" size="+2">Availability and Requirement for standalone</font></td></tr>
+<tr>
+  <td><font color ="#990033">Operating system(s)</font> : Linux</td></tr>
+<tr>
+  <td><font color ="#990033">Programming language </font>: perl</td></tr>
+<tr>
+  <td><font color ="#990033">Other requirements</font> : gcc++ compiler</td></tr>
+<tr>
+  <td><font color ="#990033">Any restrictions to use by non-academics </font>: none</td></tr>
+ </table></div>
+	  <div id="page-bottom"><div id="page-bottom-content"><p>ZincBinder is maintained by Department of Biophysics, University of Delhi South Campus. We acknowledge your comments or contribution to this resources. Please send your sugestions to Dr. Manish Kumar (Email:manish at south dot du dot ac dot in)</p></div>
+	    <br class="clearfix"/>
+	  </div>
+	</div>
+      </body>
+    </html>
+    

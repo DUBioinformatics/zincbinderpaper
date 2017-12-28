@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="zincbinder" content="" />
+    <title>ZincBinder</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="logo"><img src="images/zinclogo.png" width="406" height="130" /></div>
+      <div id="slogan"><img src="images/logo.png" width="119" height="128"></div></div>
+      <div id="menu">
+	<p><a href="index.html">Home</a><a href="prediction.html">Prediction</a><a href="algorithm.html">Algorithm</a><a href="team.html">Developers</a><a href="#">Help</a><a href="#">Contact</a></p>
+  </li></ul></div>
+  <div id="slider"><table width="753" border="0" align="center">
+<tr><td><font color="#EE0000">**************************************************************************</font></td></tr>
+<tr>
+  <td height="31">ZincBinder: Svm based approach for predicting zinc metal binding sites in protein sequences</td></tr>  	
+<tr>
+  <td height="28" >Developed By: Abhishikha Srivastava,Manish Kumar</td></tr>
+<tr><td >Department of Biophysics,University of Delhi South Campus Newdelhi, India</br></td></tr>			                                                     
+<tr><td > <font color="#EE0000">************************************************************************** </font></td></tr>
+<tr><td align=""><font color="#990033">About ZincBinder</font></td></tr>
+<tr><td>=============</td></tr>
+<tr>
+  <td align="justify">Zinc metal ions play structural, signaling and regulatory roles  in many biological systems
+    that includes stablization of membranes and various transcription factors and also the catalytic activity of various enzymes. We have developed a method &quot;<font color="#CC6600">Zincbinder</font>&quot; for predicting  zinc metal binding site from their amino acid sequence. We have developed SVM  models using 
+    PSSM and achieved maximum accuracy 86.2% respectively. Its webversion is available from <font color="#0000FF">http://proteininformatics.org/mkumar/znbinder/</font></td></tr>
+<tr>
+  <td><font color="#990033">Availability and requirement</font></td></tr>
+<tr><td>======================</td></tr>
+<tr><td align="justify"><p>ZincBinder is written in PERL language, in order to run Zincbinder one need to 
+  have or install PERL (http://www.perl.com/). It is a SVM based program 
+  where models have been developed using SVM_light.Thus user should have 
+  or install svm_classify of SVM_light from
+  http://www.cs.cornell.edu/People/tj/svm_light/.</p>
+    <p>&nbsp;</p>
+    <p>Operating system(s): Plateform Independent</p>
+    <p> Programming language :perl</p>
+    <p>Other requirements: gcc++ compiler</p>
+    <p>License: GNU GPL</p>
+    <p>Any restrictions to use by non-academics: none</p>
+   </td></tr>
+<tr><td><font color="#990033">Downloand and Installation</font></td></tr>
+<tr><td>==========================</td></tr>
+<tr><td><p>1. Download <a href="znbinder_standalone.tar.gz">znbinder_standalone.tar.gz</a></p>
+    <p> 2. Unzip using command: gunzip       znbinder_standalone.tar.gz</p>
+    <p>3. Extract files: tar -xvzf znbinder_standalone.tar      </p>
+    <p>4. Change directory: cd standlone</p>
+    <p> 5. Run program : perl znbinder.pl      </p></td></tr>
+    <tr><td><font color="#990033">How to Use</font></td></tr>
+    <tr><td>==========</td></tr>
+    <tr><td><p>1. Run using "znbinder.pl" or "./znbinder.pl" or "perl znbinder.pl"</p>
+	<p>2. Usage: znbinder.pl -i [input_file] -t [threshold]</p></td></tr>
+    <tr><td><p>Options:</p>
+	<p>-i    	    Input_file containing sequence(s) in the FASTA format. </p>
+	<p> -t   	    SVM threshold (from -1.00 to 1.00; default 0.1)</p></td></tr>
+    <tr><td><font color="#990033">Files and Directory</font></td></tr>
+    <tr><td>==================</td></tr>
+    <tr><td><p>README                  description file 
+	   helps to understand and use  all the related program
+	  in zincbinder             directory having SVM models with main program zincbinder.pl .
+      </p></td></tr>
+    <tr><td><font color="#990033">Example Usage</font></td></tr>
+    <tr>
+      <td>perl zincbinder.pl -i seq.fasta  -t 0.0</td></tr>
+    
+  </table>
+  
+</div>
+<div id="page-bottom"><div id="page-bottom-content"><p>ZincBinder is maintained by Department of Biophysics, University of Delhi South Campus. We acknowledge your comments or contribution to this resources. Please send your sugestions to Dr. Manish Kumar (Email:manish at south dot du dot ac dot in)</p></div>
+  <br class="clearfix"/>
+</div>
+</div>
+</body>
+</html>

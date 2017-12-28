@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+use CGI;
+$cgi=new CGI;
+$jobno = $cgi->param('c');
+chomp($jobno);
+$random = "/webservers/cgidocs/mkumar/temp/shikha/znbinder/zinc_$jobno";
+$result = "/webservers/cgidocs/mkumar/temp/shikha/znbinder/zinc_$jobno/result.html";
+print"Content-type: text/html\n\n";
+if(!(-e "$result"))
+{
+    print "<html>\n";
+    print "<HEAD>\n";
+    print "<TITLE> Status of your request for zincbinding residues  prediction </TITLE>\n";
+    print "<META NAME=\"description\" CONTENT=\"Prediction of Zincbinding residues\">\n";
+    print "<meta http-equiv=\"refresh\" content=\"15;url=/cgi-bin/znbinder/chkres?c=$jobno\">\n";
+    print "</HEAD><body bgcolor=\"white\">\n";
+    print "<font size=3 color=blue><b>Your Job is in progress. <p>it may take some time to process the query, please wait ........</b></font>";
+    print "<br><font size=3 color=blue><b>Your Job Number is</font><font size=3 color=red><b> $jobno</b></font>.<br>";
+    print "<font size=3 color=blue><b>This page will <blink><font size=3 color=red><b>refresh</b></font></blink> in 15 seconds.</b></font></p>";
+    print "</body></html>\n";
+}
+else
+{
+    open(FP1,"$result");
+    while($line = <FP1>)
+    {
+	print "$line\n";	
+    }	
+    close(FP1);
+}
